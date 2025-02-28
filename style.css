@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #073cecc0;
+    background-color: #f4f4f4a1;
+}
+
+/* Header styles */
+header {
+    background: #007bff;
+    /* Primary color */
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('./images/hero_img.jpg') no-repeat center center/cover;
+    /* Change to your image */
+    color: #ffffffee;
+}
+
+.cta-button {
+    background: #28a745;
+    /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+  
+    /* Button style for headers */
+.toggle-header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.toggle-header:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.toggle-content {
+    display: none; /* Initially hidden */
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Scroll reveal styles */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+    } 

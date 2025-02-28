@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .service {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            text-align: center;
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .service {
+                width: calc(45% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Health Services</h1>
+
+    <div class="service-container">
+        <div class="service">
+            <img src="./images/advices.jpg" alt="Service 1">
+            <h2>Nutrition Counseling And Health Ressources</h2>
+            <p>Personalized nutrition plans to help you achieve your health goals.</p>
+        </div>
+        <div class="service">
+            <img src="./images/extra.jpg" alt="Service 2">
+            <h2>Physical Therapy</h2>
+            <p>Rehabilitation services to improve mobility and reduce pain.</p>
+        </div>
+        <div class="service">
+            <img src="./images/sans titre.jpg" alt="Service 3">
+            <h2>Wellness Coaching And Telemedicine</h2>
+            <p>Guidance and support for a healthier lifestyle.</p>
+        </div>
+        <div class="service">
+            <img src="./images/images.jpg" alt="Service 4">
+            <h2>Massage Therapy</h2>
+            <p>Relaxation and therapeutic massage to relieve stress.</p>
+        </div>
+        <div class="service">
+            <img src="./images/yoga.jpg" alt="Service 5">
+            <h2>Yoga Classes And Health Tracking</h2>
+            <p>Classes for all levels to improve flexibility and wellness.</p>
+        </div>
+        <div class="service">
+            <img src="./images/lifestyle.jpg" alt="Service 6">
+            <h2>Health Screenings</h2>
+            <p>Comprehensive health assessments to monitor your well-being.</p>
+        </div>
+    </div>
+
+</body>
+</html>
