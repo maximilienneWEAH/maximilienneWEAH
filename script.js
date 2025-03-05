@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to reveal sections on scroll
     const revealOnScroll = () => {
         const windowHeight = window.innerHeight;
+        console.log(windowHeight);
         reveals.forEach(reveal => {
             const revealTop = reveal.getBoundingClientRect().top;
 
@@ -26,6 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', revealOnScroll);
- // Initial call to reveal elements if they are already in view
- revealOnScroll();
+    // Initial call to reveal elements if they are already in view
+    revealOnScroll();
 });

@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
     <style>
-        body {
+        .testimonials-body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            margin: 0px;
+            padding: 05px;
+            background-color: white;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            line-height: 1.9;
+
         }
-        h1 {
+
+
+        .special-text {
             text-align: center;
-            color: #333;
+            color: black;
         }
+
+            {
+            text-align: center;
+            color: black;
+        }
+
+            {
+            text-align: center;
+            color: black;
+        }
+
         .testimonial-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 20px;
         }
+
         .testimonial {
             background: white;
             border-radius: 8px;
@@ -30,20 +53,24 @@
             width: calc(30% - 40px);
             text-align: center;
         }
+
         .testimonial img {
             max-width: 100px;
             border-radius: 50%;
             margin-bottom: 10px;
         }
+
         .testimonial p {
             font-style: italic;
             color: #555;
         }
+
         @media (max-width: 768px) {
             .testimonial {
                 width: calc(45% - 40px);
             }
         }
+
         @media (max-width: 480px) {
             .testimonial {
                 width: 100%;
@@ -51,7 +78,25 @@
         }
     </style>
 </head>
-<body>
+
+<body class="testimonials-body">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HealthCare App</h1>
+            </div>
+            <ul>
+
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">log in</a></li>
+                <li><a href="signin.html">sign up</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <h1>What Our Clients Say</h1>
     <div class="testimonial-container">
@@ -88,4 +133,5 @@
     </div>
 
 </body>
+
 </html>

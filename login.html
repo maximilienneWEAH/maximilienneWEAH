@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
-    <link rel="stylsheet"  href="login.css">
-     
+    <link rel="stylsheet" href="login.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+
     <style>
-        body {
+        .login-body {
             font-family: Arial, sans-serif;
-            background-color: url('./images/Sans titre.jpg') no-repeat center center/cover;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 200vh;
+            line-height: 1.9;
+            color: #073cecc0;
+            margin: 10px;
+            padding: 10px;
+            background-color: url('./images/Sans titre.jpg') no-repeat center center/cover;
+
         }
 
         .login-container {
             background: white;
-            padding: 20px;
+            padding: 50px;
+            margin: 5px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 500px;
+            text-align: center;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         h2 {
             text-align: center;
             margin-bottom: 20px;
+
         }
 
         label {
             display: block;
             margin-bottom: 5px;
+
         }
 
         input[type="text"],
@@ -47,55 +59,79 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+
         }
 
         button {
             width: 100%;
             padding: 10px;
-            background-color: #007bff; /* Primary color */
+            background-color: #007bff;
+            /* Primary color */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+
         }
 
-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-</style>
+        button:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+    </style>
 </head>
-<body>
 
-<div class="login-container">
-<h2>Login</h2>
-<form action="submit_form.php" method="POST"> <!-- Replace with your form handling script -->
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+<body class="login-body">
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HealthCare App</h1>
+            </div>
+            <ul>
 
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" required min="1">
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">log in</a></li>
+                <li><a href="signin.html">sign up</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <label for="location">Location</label>
-    <input type="text" id="location" name="location" required>
 
-    <label for="sex">Sex</label>
-    <select id="sex" name="sex" required>
-        <option value="" disabled selected>Select your sex</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-    </select>
+    <div class="login-container">
+        <h2>Log In</h2>
+        <form action="submit_form.php" method="POST"> <!-- Replace with your form handling script -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-    <button type="submit">Submit</button>
-</form>
-</div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required min="1">
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="sex">Sex</label>
+            <select id="sex" name="sex" required>
+                <option value="" disabled selected>Select your sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
+
 </html>

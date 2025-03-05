@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 40px;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            line-height: 1.9;
+        
         }
+
         h1 {
             text-align: center;
-            color: #333;
+            color: white;
         }
+
         .about-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
         }
+
         .about-content {
             max-width: 800px;
             text-align: center;
@@ -30,18 +42,41 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
+
         .about-content img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
         }
-        .mission, .vision, .values {
+
+        .mission,
+        .vision,
+        .values {
             margin: 20px 0;
         }
     </style>
 </head>
-<body>
+
+<body class="login-body">
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HealthCare App</h1>
+            </div>
+            <ul>
+
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">log in</a></li>
+                <li><a href="signin.html">sign in</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <h1>About Us</h1>
 
@@ -49,17 +84,21 @@
         <div class="about-content">
             <img src="./images/about us1.jpg" alt="About Us Image">
             <h2>Our Mission</h2>
-            <p class="mission">To empower individuals to take control of their health through innovative technology and personalized care.</p>
+            <p class="mission">To empower individuals to take control of their health through innovative technology and
+                personalized care.</p>
 
             <img src="./images/about us.jpg" alt="Vision Image">
             <h2>Our Vision</h2>
-            <p class="vision">To be a leader in healthcare innovation, enhancing the well-being of our communities globally.</p>
+            <p class="vision">To be a leader in healthcare innovation, enhancing the well-being of our communities
+                globally.</p>
 
             <img src="./images/about us3.jpg" alt="Values Image">
             <h2>Our Values</h2>
-            <p class="values">We believe in integrity, compassion, and collaboration. Our commitment is to quality care and patient satisfaction.</p>
+            <p class="values">We believe in integrity, compassion, and collaboration. Our commitment is to quality care
+                and patient satisfaction.</p>
         </div>
     </div>
 
 </body>
+
 </html>
